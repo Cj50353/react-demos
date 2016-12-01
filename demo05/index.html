@@ -7,29 +7,7 @@
   </head>
   <body>
     <div id="example"></div>
-    <script type="text/babel">
-      var NotesList = React.createClass({
-        render: function() {
-          return (
-            <ol>
-              {
-                React.Children.map(this.props.children, function (child) {
-                  return <li>{child}</li>;
-                })
-              }
-            </ol>
-          );
-        }
-      });
-
-      ReactDOM.render(
-        <NotesList>
-          <span>hello</span>
-          <span>world</span>
-        </NotesList>,
-        document.getElementById('example')
-      );
-    </script>
   </body>
+  <script type="text/babel" src="script.js"></script>
 </html>
 
